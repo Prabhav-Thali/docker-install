@@ -175,6 +175,7 @@ echo_docker_as_nonroot() {
 	if is_dry_run; then
 		return
 	fi
+
 	if command_exists docker && [ -e /var/run/docker.sock ]; then
 		(
 			set -x
